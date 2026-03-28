@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-microservices",
+  "version": "1.0.0",
+  "description": "Simple E-Commerce Microservices Setup for Learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-gateway\" \"npm run start-users\" \"npm run start-products\" \"npm run start-orders\"",
+    "install-all": "npm install && cd api-gateway && npm install && cd ../users-service && npm install && cd ../products-service && npm install && cd ../orders-service && npm install",
+    "start-gateway": "cd api-gateway && node index.js",
+    "start-users": "cd users-service && node index.js",
+    "start-products": "cd products-service && node index.js",
+    "start-orders": "cd orders-service && node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
