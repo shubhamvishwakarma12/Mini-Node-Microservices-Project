@@ -4,7 +4,7 @@ This project is a straightforward Node.js application demonstrating a microservi
 
 ## Architecture
 
-The project is split into four separate Node.js applications:
+The project is split into four separate Node.js applications :
 
 1.  **API Gateway (Port 3000)**: The single entry point for all client requests. It routes requests to the appropriate backend microservice.
 2.  **Users Service (Port 3001)**: Manages read/write operations for user profiles.
